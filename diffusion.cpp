@@ -1,6 +1,4 @@
-int main() {
 
-};
 #pragma once
 #include <cmath>
 #include <stdexcept>
@@ -152,6 +150,13 @@ namespace SiriusFM {
 
 	};
 
+
+
 }
+
+int main() {
+using namespace SiriusFM;
+};
+
 
  
