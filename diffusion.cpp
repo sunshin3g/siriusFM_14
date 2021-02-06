@@ -2,6 +2,7 @@
 #pragma once
 #include <cmath>
 #include <stdexcept>
+#include "iostream"
 namespace SiriusFM {
 	// что делать с трендами? будем считать пока, что тренды более сложные, чем линейные, особого смысла не имеют. Тренды во всех этих случаях будут просто линейными. А волатильности будут разными.
 
@@ -155,7 +156,16 @@ namespace SiriusFM {
 }
 
 int main() {
+using namespace std;
 using namespace SiriusFM;
+DiffusionGBM obj1(1,5);
+double muu = obj1.mu(1,2);
+double sigmaa = obj1.sigma(3,4);
+cout << muu;
+cout <<  "\n";
+cout << sigmaa;
+return 0;
+
 };
 
 
